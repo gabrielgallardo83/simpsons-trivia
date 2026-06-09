@@ -131,16 +131,16 @@ docker rm simpsons-trivia
 Capturas de pantalla
 
 Repositorio publicado
-![Repositorio](screenshots/repo.png)
+![Repositorio](capturas/repo.png)
 
  Construccion de la imagen
-![Build](screenshots/build.png)
+![Build](capturas/build.png)
 
  Ejecucion del contenedor
-![Run](screenshots/run.png)
+![Run](capturas/run.png)
 
  Aplicacion funcionando
-![App](screenshots/app.png)
+![App](capturas/app.png)
 
 
 

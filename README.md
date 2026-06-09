@@ -1,13 +1,13 @@
-# 🟡 Springfield Trivia – ¿Quién lo dijo?
+ Springfield Trivia – ¿Quién lo dijo?
 
 
 Trivia interactiva de Los Simpsons: se muestra una frase icónica y el jugador debe adivinar qué personaje la dijo entre cuatro opciones, antes de que se acabe el tiempo.
 
 
----
 
 
-## 🛠️ Tecnologías utilizadas
+
+ Tecnologías utilizadas
 
 
 | Tecnología | Rol |
@@ -19,10 +19,10 @@ Trivia interactiva de Los Simpsons: se muestra una frase icónica y el jugador d
 | Docker + nginx | Contenedor para servir la app |
 
 
----
 
 
-## ✅ Requisitos previos
+
+Requisitos previos
 
 
 - [Docker](https://www.docker.com/) instalado y corriendo
@@ -30,87 +30,82 @@ Trivia interactiva de Los Simpsons: se muestra una frase icónica y el jugador d
 - Navegador web moderno
 
 
----
 
 
-## 📂 Estructura del proyecto
+
+ Estructura del proyecto
 
 
-```
+
 simpsons-trivia/
+
 ├── index.html      # Estructura principal
 ├── style.css       # Estilos
 ├── app.js          # Lógica del juego y consumo de API
 ├── Dockerfile      # Configuración del contenedor
 ├── .gitignore      # Archivos ignorados por Git
 └── README.md       # Este archivo
-```
 
 
----
 
 
-## 🚀 Pasos de instalación
 
 
-### 1. Clonar el repositorio
+ Pasos de instalación
 
 
-```bash
+ 1. Clonar el repositorio
+
+
+bash
 git clone https://github.com/TU_USUARIO/simpsons-trivia.git
 cd simpsons-trivia
-```
 
 
-### 2. (Opcional) Probar sin Docker
 
 
-Basta con abrir `index.html` en el navegador. Requiere conexión a internet para la API.
 
 
----
+ Construcción de la imagen Docker
 
 
-## 🐳 Construcción de la imagen Docker
-
-
-```bash
+bash
 docker build -t simpsons-trivia .
-```
 
 
----
 
 
-## ▶️ Ejecución del contenedor
 
 
-```bash
+Ejecución del contenedor
+
+
+bash
 docker run -d -p 8080:80 --name simpsons-trivia simpsons-trivia
-```
+
 
 
 Luego abrí el navegador en:
 
 
-```
+
 http://localhost:8080
-```
+
 
 
 Para detener el contenedor:
 
 
-```bash
+bash
 docker stop simpsons-trivia
 docker rm simpsons-trivia
-```
 
 
----
 
 
-## 🎮 Cómo jugar
+
+
+ Cómo jugar
 
 
 1. Presioná **¡Empezar!**
@@ -121,8 +116,7 @@ docker rm simpsons-trivia
 
 ---
 
-
-## 🔗 API utilizada
+ API utilizada
 
 
 **The Simpsons API** – [https://thesimpsonsapi.com](https://thesimpsonsapi.com)
@@ -133,10 +127,9 @@ docker rm simpsons-trivia
 - Devuelve personajes con nombre, imagen y frases
 
 
----
 
 
-## 👤 Autor
+
 
 
 Trabajo Práctico N°1 – Git y Docker  

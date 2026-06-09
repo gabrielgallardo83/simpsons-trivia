@@ -8,6 +8,7 @@ var chars = [];
 var vistos = new Set();
 var puntos = 0;
 var ronda = 1;
+
 var tmr = null;
 var respondio = false;
 var actual = null;

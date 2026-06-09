@@ -10,7 +10,7 @@
 
   <header>
     <div class="header-inner">
-      <span class="logo-text">🟡 Springfield Trivia</span>
+      <span class="logo-text">🟡 Simpson Trivia</span>
       <div class="score-box">
         <span>Puntaje: <strong id="score">0</strong></span>
         <span>Ronda: <strong id="round">1</strong> / 10</span>
@@ -19,20 +19,20 @@
   </header>
 
   <main>
-    <!-- Pantalla de inicio -->
+    <!--  inicio -->
     <section id="screen-start" class="screen active">
       <div class="start-card">
         <h1>¿Quién lo dijo?</h1>
         <p class="subtitle">Trivia de frases de Los Simpsons</p>
         <p class="description">
-          Se te mostrará una frase icónica.<br>
+          Se mostrará una frase icónica.<br>
           Elegí qué personaje la dijo antes de que se acabe el tiempo.
         </p>
         <button class="btn-primary" onclick="startGame()">¡Empezar!</button>
       </div>
     </section>
 
-    <!-- Pantalla de juego -->
+    <!--  juego -->
     <section id="screen-game" class="screen">
       <div class="game-layout">
 
@@ -45,13 +45,13 @@
         </div>
 
         <div class="options-grid" id="options-grid">
-          <!-- 4 botones generados por JS -->
+        
         </div>
 
       </div>
     </section>
 
-    <!-- Pantalla de resultado por ronda -->
+    <!--  resultado por ronda -->
     <section id="screen-result" class="screen">
       <div class="result-card">
         <p id="result-verdict" class="verdict"></p>
@@ -62,7 +62,7 @@
       </div>
     </section>
 
-    <!-- Pantalla final -->
+    <!--  final -->
     <section id="screen-end" class="screen">
       <div class="end-card">
         <h2>¡Fin del juego!</h2>
@@ -75,7 +75,7 @@
 
   </main>
 
-  <!-- Overlay de carga -->
+  <!--  carga -->
   <div id="loading-overlay" class="loading-overlay hidden">
     <div class="spinner"></div>
     <p>Cargando personajes…</p>

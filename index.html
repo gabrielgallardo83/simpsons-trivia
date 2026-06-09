@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simpsons Trivia – ¿Quién lo dijo?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <span class="logo-text">🟡 Springfield Trivia</span>
+      <div class="score-box">
+        <span>Puntaje: <strong id="score">0</strong></span>
+        <span>Ronda: <strong id="round">1</strong> / 10</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pantalla de inicio -->
+    <section id="screen-start" class="screen active">
+      <div class="start-card">
+        <h1>¿Quién lo dijo?</h1>
+        <p class="subtitle">Trivia de frases de Los Simpsons</p>
+        <p class="description">
+          Se te mostrará una frase icónica.<br>
+          Elegí qué personaje la dijo antes de que se acabe el tiempo.
+        </p>
+        <button class="btn-primary" onclick="startGame()">¡Empezar!</button>
+      </div>
+    </section>
+
+    <!-- Pantalla de juego -->
+    <section id="screen-game" class="screen">
+      <div class="game-layout">
+
+        <div class="quote-area">
+          <p class="quote-label">¿Quién dijo esta frase?</p>
+          <blockquote id="quote-text">"…"</blockquote>
+          <div class="timer-bar-wrap">
+            <div class="timer-bar" id="timer-bar"></div>
+          </div>
+        </div>
+
+        <div class="options-grid" id="options-grid">
+          <!-- 4 botones generados por JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pantalla de resultado por ronda -->
+    <section id="screen-result" class="screen">
+      <div class="result-card">
+        <p id="result-verdict" class="verdict"></p>
+        <img id="result-img" src="" alt="Personaje" class="char-portrait" />
+        <p id="result-name" class="char-name"></p>
+        <p id="result-msg" class="result-msg"></p>
+        <button class="btn-primary" onclick="nextRound()">Siguiente →</button>
+      </div>
+    </section>
+
+    <!-- Pantalla final -->
+    <section id="screen-end" class="screen">
+      <div class="end-card">
+        <h2>¡Fin del juego!</h2>
+        <p class="final-score-label">Tu puntaje final</p>
+        <p class="final-score" id="final-score">0 / 10</p>
+        <p id="final-msg" class="final-msg"></p>
+        <button class="btn-primary" onclick="resetGame()">Jugar de nuevo</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Overlay de carga -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <p>Cargando personajes…</p>
+  </div>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>

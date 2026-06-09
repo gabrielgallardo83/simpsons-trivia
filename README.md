@@ -127,6 +127,7 @@ docker rm simpsons-trivia
 - Devuelve personajes con nombre, imagen y frases
 
 
+
 Capturas de pantalla
 
 Repositorio publicado
@@ -140,6 +141,7 @@ Repositorio publicado
 
  Aplicacion funcionando
 ![App](screenshots/app.png)
+
 
 
 

@@ -131,7 +131,7 @@ docker rm simpsons-trivia
 Capturas de pantalla
 
 Repositorio publicado
-![Repositorio](screenshots/repositorio.png)
+![Repositorio](screenshots/repo.png)
 
  Construccion de la imagen
 ![Build](screenshots/build.png)

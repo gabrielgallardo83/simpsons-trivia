@@ -4,7 +4,7 @@
 Trivia interactiva de Los Simpsons: se muestra una frase icónica y el jugador debe adivinar qué personaje la dijo entre cuatro opciones, antes de que se acabe el tiempo.
 
 
-
+https://gabrielgallardo83.github.io/simpsons-trivia/ 
 
 
  Tecnologías utilizadas

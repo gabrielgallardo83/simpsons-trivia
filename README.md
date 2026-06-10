@@ -47,7 +47,7 @@ simpsons-trivia/
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/simpsons-trivia.git
+git clone https://github.com/gabrielgallardo83/simpsons-trivia.git
 cd simpsons-trivia
 ```
 

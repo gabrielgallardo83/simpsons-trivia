@@ -1,14 +1,14 @@
- Springfield Trivia – ¿Quién lo dijo?
 
+
+# Springfield Trivia – ¿Quién lo dijo?
 
 Trivia interactiva de Los Simpsons: se muestra una frase icónica y el jugador debe adivinar qué personaje la dijo entre cuatro opciones, antes de que se acabe el tiempo.
 
+https://gabrielgallardo83.github.io/simpsons-trivia/
 
-https://gabrielgallardo83.github.io/simpsons-trivia/ 
+---
 
-
- Tecnologías utilizadas
-
+## Tecnologías utilizadas
 
 | Tecnología | Rol |
 |------------|-----|
@@ -18,140 +18,108 @@ https://gabrielgallardo83.github.io/simpsons-trivia/
 | [The Simpsons API](https://thesimpsonsapi.com/) | Fuente de personajes y frases |
 | Docker + nginx | Contenedor para servir la app |
 
+---
 
-
-
-
-Requisitos previos
-
+## Requisitos previos
 
 - [Docker](https://www.docker.com/) instalado y corriendo
 - Conexión a internet (para consumir la API en tiempo real)
 - Navegador web moderno
 
+---
 
+## Estructura del proyecto
 
-
-
- Estructura del proyecto
-
-
-
+```
 simpsons-trivia/
-
 ├── index.html      # Estructura principal
 ├── style.css       # Estilos
 ├── app.js          # Lógica del juego y consumo de API
 ├── Dockerfile      # Configuración del contenedor
 ├── .gitignore      # Archivos ignorados por Git
 └── README.md       # Este archivo
+```
 
+---
 
+## Instalación
 
+### 1. Clonar el repositorio
 
-
-
- Pasos de instalación
-
-
- 1. Clonar el repositorio
-
-
-bash
-git clone https://github.com/gabrielgallardo83/simpsons-trivia.git
+```bash
+git clone https://github.com/TU_USUARIO/simpsons-trivia.git
 cd simpsons-trivia
+```
 
+### 2. Construir la imagen Docker
 
-
-
-
-
- Construcción de la imagen Docker
-
-
-bash
+```bash
 docker build -t simpsons-trivia .
+```
 
+### 3. Ejecutar el contenedor
 
-
-
-
-
-Ejecución del contenedor
-
-
-bash
+```bash
 docker run -d -p 8080:80 --name simpsons-trivia simpsons-trivia
-
-
+```
 
 Luego abrí el navegador en:
 
-
-
+```
 http://localhost:8080
-
-
+```
 
 Para detener el contenedor:
 
-
-bash
+```bash
 docker stop simpsons-trivia
 docker rm simpsons-trivia
+```
 
+---
 
-
-
-
-
- Cómo jugar
-
+## Cómo jugar
 
 1. Presioná **¡Empezar!**
 2. Leé la frase que aparece en pantalla
 3. Elegí el personaje correcto entre las 4 opciones antes de que se agote el tiempo (15 segundos)
 4. Completá las 10 rondas y descubrí tu puntaje final
 
-
 ---
 
- API utilizada
-
+## API utilizada
 
 **The Simpsons API** – [https://thesimpsonsapi.com](https://thesimpsonsapi.com)
-
 
 - No requiere autenticación
 - Endpoint usado: `GET /api/characters?page={n}`
 - Devuelve personajes con nombre, imagen y frases
 
+---
 
+## Capturas de pantalla
 
-Capturas de pantalla
-
-Repositorio publicado
+Repositorio publicado  
 ![Repositorio](capturas/repo.png)
 
- Construccion de la imagen
+Construcción de la imagen  
 ![Build](capturas/build.png)
 
- Ejecucion del contenedor
+Ejecución del contenedor  
 ![Run](capturas/run.png)
 
- Aplicacion funcionando
+Aplicación funcionando  
 ![App](capturas/app.png)
 
-
-
-
-
-
-
-
-
+---
 
 Trabajo Práctico N°1 – Git y Docker  
-Materia: Ing de Software  
+Materia: Ingeniería de Software  
 Alumno: Gabriel Gallardo
+ 
+
+
+
+
+
 

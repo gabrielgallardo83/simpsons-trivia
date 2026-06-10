@@ -58,7 +58,7 @@ simpsons-trivia/
 
 
 bash
-git clone https://github.com/TU_USUARIO/simpsons-trivia.git
+git clone https://github.com/gabrielgallardo83/simpsons-trivia.git
 cd simpsons-trivia
 
 
